@@ -1,0 +1,4 @@
+.badyCard {
+  display: flex;
+  flex-direction: row;
+}

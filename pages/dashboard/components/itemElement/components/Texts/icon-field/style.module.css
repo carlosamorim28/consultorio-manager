@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  align-items: center ; 
+  margin-bottom: 8px;
+}
+
+.labelIconField {
+  color: #A4A4A4;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
