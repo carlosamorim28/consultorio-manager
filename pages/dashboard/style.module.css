@@ -1,0 +1,38 @@
+.cardListContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  margin-top: 40px;
+  overflow-x: scroll;
+}
+
+.tabContainer{
+  display: flex;
+}
+
+.customFormStyles{
+  margin-top: 60px;
+}
+
+.headerContainer{
+  display: flex;
+}
+
+.title {
+  color: var(--d-9-d-9-d-9, #731900);
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.subtitle{
+  color: var(--d-9-d-9-d-9, #731900);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 72px;
+}

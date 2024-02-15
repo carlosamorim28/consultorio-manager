@@ -1,0 +1,50 @@
+
+
+
+.generalContainerInput{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: #111214;
+}
+
+.generalInput{
+  display: flex;
+  flex: 1;
+  padding: 11px 16px 10px 16px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 4px 4px 0px 0px;
+  background: var(--Background-Neutral-Default, #F4F5F7);
+  border-bottom: 2px solid #AAA;
+  height: 48px;
+
+}
+
+.generalInput::placeholder{
+  color: var(--Text-Soft, #6C7077);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112.5%; /* 18px */
+  letter-spacing: 0.08px;
+  
+}
+
+.generalInput:focus{
+  border: none
+}
+
+.labelText{
+  color:#111214;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 112.5%; /* 15.75px */
+  letter-spacing: 0.07px;
+  margin-bottom: 8px;
+}
+

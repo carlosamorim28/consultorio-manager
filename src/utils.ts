@@ -1,1 +1,1 @@
-export type ReactSetState = React.Dispatch<React.SetStateAction<string>>;
+export type ReactSetState = (value: string) => void;

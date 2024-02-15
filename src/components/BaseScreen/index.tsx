@@ -4,7 +4,9 @@ import { colors } from "@/src/colors";
 export default function CMBaseScreen({children, style}:{children: ReactNode, style?: React.CSSProperties}): React.ReactElement {
   return(
     <div className={styles.screenContainer} style={{backgroundColor: colors.background, ...style}}>
-      {children}
+      <div className={styles.safeAreaContent}>
+        {children}
+      </div>
     </div>
   )
 }

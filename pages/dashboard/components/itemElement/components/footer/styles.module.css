@@ -1,5 +1,8 @@
 .footer{
   width: 100%;
+  padding-top: 12px;
   border-top: 1.5px solid #CCCCCC;
-  margin: 12px 0px
+  margin: 12px 0px;
+  display: flex;
+  flex: 1;
 }

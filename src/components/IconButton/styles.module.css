@@ -1,24 +1,4 @@
-.badyCard {
-  display: flex;
-  flex-direction: row;
-}
 
-.subcard {
-  border-radius: 4px;
-  background: #E8E8E8;
-  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-  width: fit-content;
-  height: fit-content;
-  flex-shrink: 0;
-  padding: 8px;
-  margin-right: 16px;
-  cursor: pointer;
-  transition: 200ms;
-}
-
-.subcard:hover {
- opacity: 50%;
-}
 
 .nextButton {
   display: flex;
@@ -26,12 +6,16 @@
   border-radius: 4px;
   background: var(--d-9-d-9-d-9, #731900);
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-  width: 80px;
+  width: fit-content;
   height: 34px;
   flex-shrink: 0;
   align-items: center;
   cursor: pointer;
   transition: 200ms;
+}
+
+.textButton{
+  margin-right: 12px;
 }
 
 .nextButton:hover {

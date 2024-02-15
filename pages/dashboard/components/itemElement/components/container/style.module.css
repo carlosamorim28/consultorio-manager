@@ -1,6 +1,6 @@
 .itemContainer{
   width: 378px;
-  height: 193px;
+  height: fit-content;
   flex-shrink: 0;
   border-radius: 14px;
   background: #EFEFEF;
