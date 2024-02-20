@@ -10,12 +10,27 @@ import ProfileImage from '@/src/imgs/profile.png'
 import CMSubmitButton from "@/src/components/Button/Button";
 import { NavigationTabs } from "./components/NavigationTab/NavigationTabViewModel";
 import AttestationForm from "./components/AttestationForm";
+import ConsultList from "./components/ClientsList";
+import ReciepForm from "./components/reciep-form";
+
+
+const testList = [{clientName:'', date: '', doctorName: '', time: ''}, {clientName:'', date: '', doctorName: '', time: ''}, {clientName:'', date: '', doctorName: '', time: ''}, {clientName:'', date: '', doctorName: '', time: ''}, {clientName:'', date: '', doctorName: '', time: ''}, {clientName:'', date: '', doctorName: '', time: ''}, {clientName:'', date: '', doctorName: '', time: ''}, {clientName:'', date: '', doctorName: '', time: ''}]
+
 export default function Dashboard(): React.ReactElement {
   const [tabSelected, setTabSelected] = useState<NavigationTabs>(NavigationTabs.consultas)
   
   const objeto:{ [key in NavigationTabs]?: React.ReactNode} = {
-    [NavigationTabs.consultas]: <ConsultForm />,
-    [NavigationTabs.atestados]: <AttestationForm />
+    [NavigationTabs.consultas]: <>
+      <div className={styles.cardListContainer}>
+        <ItemElement />
+        <ItemElement />
+        <ItemElement />
+      </div>
+      <ConsultForm />
+    </>,
+    [NavigationTabs.atestados]: <AttestationForm />,
+    [NavigationTabs.pacientes]: <ConsultList consultList={testList} />,
+    [NavigationTabs.receitas]: <ReciepForm />
   }
 
 
@@ -33,11 +48,6 @@ export default function Dashboard(): React.ReactElement {
         <NavigationTab setNavigationTab={setTabSelected} />
         <Spacer />
         <CMSubmitButton title="Nova Consulta" onClick={()=>null} style={{color: '#731900', backgroundColor:'#fff', border: "4px solid var(--d-9-d-9-d-9, #731900)", width: '251px',height: '56px', fontFamily:'Inter', fontSize:'18px', lineHeight: 'normal' }} />
-      </div>
-      <div className={styles.cardListContainer}>
-        <ItemElement />
-        <ItemElement />
-        <ItemElement />
       </div>
     <div className={styles.customFormStyles}>
       {objeto[tabSelected]}
